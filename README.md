@@ -1,6 +1,3 @@
-# course-name
+# Abstract Algebra
 
-Change the course name and number in
-- ``index.qmd''
-- ``_quarto.yml''
-Write/upload syllabus in ``syllabus/syllabus.rmd''
+Course website for MA-110 at Westmont College, run by Kyle Hansen, Ph.D.
