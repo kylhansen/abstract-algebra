@@ -1,0 +1,234 @@
+---
+geometry: left=1.0in, right=1.0in, top=0.8in, bottom=0.4in
+classoption: twoside
+output: 
+  pdf_document:
+    keep_tex: true
+    includes:
+      in_header: latex-header.tex
+urlcolor: blue
+linkcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+library(kableExtra)
+```
+
+# Abstract Algebra (MA-110) Westmont College, Fall 2025[^2]
+
+[^2]: Large parts of this syllabus are borrowed from previous syllabi by David Hunter. 
+
+```{r echo=FALSE}
+kbl(data.frame(x = c("Time", "Location", "Professor", "Email", "Office", "Office Hours"),
+                 y = c("MWF, 8:00am-9:05am", "Winter Hall 110", "Kyle Hansen, Ph.D.", "kylhansen@westmont.edu", "Winter Hall 303", "TBA")), col.names = NULL, booktabs = TRUE)
+```
+
+## Course Description 
+
+### (Four credit hours), Prerequisite(s): MA-020 Linear Algebra.
+
+Abstract algebraic patterns pervade modern mathematics. Given simple definitions of groups, rings, and fields, this course develops the intricate theory of these objects, including permutation groups, subgroups, quotient groups and rings, isomorphisms, and extension fields.
+
+### Put another way...
+
+This class is the study of the operations of multiplication and addition (and, secretly, function composition) set in their most abstract form. Starting with only and handful of definitions and even fewer assumptions, we proceed axiomatically to deduce a large volume of powerful mathematical results. The material in this course (and the sequel, MA-111) represents the consequences of some very low-level mathematical foundations: logic, sets, and the integers. 
+These ideas have far-reaching applications throughout pure and applied mathematics, and are part of the *lingua franca* of the discipline. Throughout this semester and the next (the highlight of this course), you will be guided through a series of deductive discoveries along the path that modern mathematicians have blazed. Whether this path is the only reasonable one will be yours to judge once you have completed the journey.
+
+"*But where's the quadratic formula?*" you ask. Indeed, historically, much of this subject was motivated by the search for solutions to polynomial equations: are there analogs to the quadratic formula for polynomials of degree greater than 2? We take our time to get there, but eventually our trajectory will lead us into study of roots of polynomial equations, as you might expect, but keep your eyes peeled and your head up---your perspective on these innocent-looking functions will be pushed into deeper, higher, more abstract realms of the subject.
+
+## Learning Outcomes 
+
+### Institutional Learning Outcomes (ILO's)
+The faculty of Westmont College have established common learning outcomes for all courses at the institution. These outcomes are summarized as follows:
+1. Christian Understanding, Practices, and Affections,
+2. Global Awareness and Diversity,
+3. Critical Thinking,
+4. Quantitative Literacy,
+5. Written Communication,
+6. Oral Communication, and
+7. Information Literacy.
+
+### Program Learning Outcomes (PLO's) 
+Additionally, the mathematics department at Westmont College has formulated the following learning outcomes for all of its classes. 
+
+1. **Core Knowledge:** Students will demonstrate knowledge of the main concepts, skills, and facts of the discipline of mathematics.
+2. **Communication:** Students will be able to communicate mathematical ideas following the standard conventions of writing or speaking in the discipline.
+3. **Creativity:** Students will demonstrate the ability to formulate and make progress toward solving non-routine problems.
+4. **Christian Connection:** Students will incorporate their mathematical skills and knowledge into their thinking about their vocations as followers of Christ.
+
+
+### Course Learning Outcomes (CLOs)
+The above outcomes are reflected in the particular learning outcomes for this course. After taking this course, you should be able to
+
+1. Demonstrate understanding of modern abstract algebra. (PLO 1, ILOs 3,4)
+2. Write mathematical arguments according to the standards of the discipline. (PLO 2, ILOs 3,5)
+3. Construct solutions to novel problems, demonstrating perseverance in the face of open-ended or partially-defined contexts. (PLO 3, ILO 3)
+4. Consider the theological implications of the subject matter. (PLO 4, ILO 1)
+   
+These outcomes will be assessed by written prework assignments, typeset final drafts, and written exams, as described [below](#course-logistics).
+
+### General Education Writing Intensive Course
+In addition to the above Learning Outcomes, this course is classified as "writing intensive" for the purposes of Westmont's general education requirements. Therefore we will spend a significant amount of time learning how to write mathematically. Your written prework assignments will contain many problems where you are asked to "prove" something, and I will grade these proofs taking both correctness and exposition into account.  A selection of problems will be assigned for you to typeset carefully and submit a final draft, doing revisions as necessary. I expect you all to make progress in your ability to write mathematically.
+
+## Course Logistics 
+
+### Textbook
+
+The text for this course is *Abstract Algebra I & II*, by David Hunter, made freely available and used with his permission. These are a revised and expanded version of *Introductory Abstract Algebra*, by Margaret L. Morrow, *Journal of Inquiry Based Learning in Mathematics* **26**, (2012). 
+Morrow's notes provide a gentle, inquiry-based introduction to group theory, with Hunter adding several chapters which cover rings and fields.[^1]
+
+[^1]: This is not a "traditional" textbook, and requires your active participation in its completion. Throughout the semester you will be adding pages of notes, prework, and final drafts to your binder, which will evolve into a complete text that you have taken part in writing.
+
+### Grades 
+To assess how well we meet some of the designated Learning Outcomes, you will receive regular grades on your written prework and typeset final drafts. You will find grades and feedback on Canvas. In addition, there will be four traditional exams and weekly quizzes. Grades are weighted as follows.
+
+```{r echo=FALSE}
+kbl(data.frame(x = c("Written Prework Assignments", "Presentations and Participation", "Typeset Final Drafts", "Quizzes (top 10)", "Exams (3)", "Final Exam"),
+                 y = c("15%", "10%", "15%", "1% each (10% total)", "5% + 10% + 15% (30% total)", "20%")), col.names = NULL, booktabs = TRUE)
+```
+
+### Written Work & Participation (40%)
+
+We will work through a series of problems that, along with the sequel, give a comprehensive coverage of two semesters of advanced undergraduate or beginning graduate algebra. Ideally, you will supply the answers. Your written accounts of your inquiry and our class discussions will produce a complete modern algebra textbook of your own construction.
+
+This course is meant to prepare you for your future studies and work.  You will inevitably encounter mathematical concepts in situations where nobody is there to explain things to you.  I want you to develop the necessary skills of inquiry to prepare you for these encounters.  Therefore, I will often be expecting you to find answers to problems yourself.  There will be times when I intentionally leave things unexplained for you to figure out.  This is part of an educational strategy designed to make you a better thinker.
+
+Unless you are told otherwise, **do not use outside resources** (e.g., Internet, books, LLMs) when you work on the assignments.  I would rather see a half-right solution that you have constructed yourself than a perfect solution that somebody else constructed.
+
+This course presents an opportunity for you to grow in your ability to work by yourself. I strongly recommend that you \textbf{spend time alone with the assigned problems} before working with others. If you do work with others on an assignment, please include a note on your assignment indicating the names of those you worked with. And remember that \textbf{the work you hand in should represent your own understanding.} 
+
+There will typically be three phases to the inquiry process, all focused on the sequence of problems from the text.
+
+#### Prework (15%)
+
+On most days, there will be a written assignment due the night before class. My expectation is that these prework assignments will be hand written; I encourage you to find an efficient notebook system that allows you to intersperse hand-outs and your own written work. A three-ring binder works well for this purpose.
+		  
+Use a scanner app (e.g., Genius Scan, Adobe Scan) to make a PDF of your prework and submit it on Gradescope. If your prework spans multiple pages, please combine all pages into a single PDF file. Be sure that each page is properly matched and in the correct orientation.
+		  
+In general, you can receive full credit for less-than-perfect prework assignments, as long as you make significant progress on each problem.  Making progress can include writing down the first and last lines of the proof, and formulating some questions about what you didn't understand.
+		  
+#### Class Discussion (10%)
+
+The bulk of our class time will be spent discussing the assigned problems that you have attempted in the prework phase. On most days, you will be assigned one or more of the problems to present at the board. First,  students write their solutions (or partial solutions) on the board. Once everyone has finished, we will discuss all the problems together in whole-class discussion. During these discussions you should focus on correcting and completing the proofs from your prework assignments. Since there is not a traditional textbook for this class, you have the responsibility of recording your own complete solutions for every problem.
+
+#### Final Drafts (15%) 
+
+Each week, a selection of problems will be assigned for you to typeset a final draft of solutions. These final drafts will be graded on logic, exposition, and formatting. You should add your graded and corrected final drafts to your binder, which will grow into a textbook of your own construction.
+
+### Assessments (60%)
+
+Research shows that one cannot understand a subject unless one can recall the necessary material with ease. One most easily recalls material when one has been given practice recalling it. 
+
+#### Quizzes (10%)
+Weekly quizzes at the end of class on Friday will give you practice recalling definitions or performing simple calculations covered from the prework material of the previous week (Friday through Wednesday). At most, your top 10 quizzes will be graded; all others will be dropped.
+
+#### Exams (50%)
+
+This course will have three (3) midterm exams and one (1) final exam. These exams will not be rescheduled, and absences will count as 0 points. Exams may not be made up. Exams will (naturally) be cumulative, loosely paired with each unit. To reflect this cumulative nature and to help you develop a "growth mindset" throughout this course, exam percentages will increase as the term progresses. 
+
+### Unit Schedule
+
+A separate document will be provided which outlines the specific dates and assignments due throughout the course. We will attempt to adhere to the following general schedule for this course, with exams punctuating the end of each unit:
+
+#### Unit 1: Elementary Group Theory
+- Definitions (§1), Constructions (§2), and Homomorphisms (§3) of Groups. 
+- Exam (5%) on September 29.
+
+#### Unit 2: Structure in Groups
+- Cosets (§4), Quotients (§5.1-§5.2), and Isomorphism Theorems (§5.3) of Groups.
+- Exam (10%) on October 27.
+
+#### Unit 3: Rings, Ideals, and Fields
+- Elementary Theory (§6), Quotients (§7), and Divisibility (§8) of Rings.
+- Exam (15%) on November 24.
+
+#### Polynomial Rings and Field Extensions
+- Polynomials (§9.1), Prime & Maximal Ideals (§9.2-§9.3), and Field Extensions (§9.4)
+- Final exam (20%) on December 18.
+
+
+<!-- ```{r echo=FALSE}
+schedule <- read.csv("schedule.tsv", sep = "\t")
+
+kbl(t(scheudle), booktabs = TRUE)
+``` -->
+
+
+## Resources, Policies, and Expectations 
+
+### Attendance 
+One of the primary resources you have in this class is the class time itself. If you miss a significant number of classes, you will almost definitely do poorly in this class. If you miss more than six classes without a valid excuse, I reserve the right to terminate you from the course with a failing grade.  
+
+### Assignment and Assessments
+
+All assignments and assessments must be turned in by the start of class on the day they are due. Work missed (including tests) without a valid excuse will receive a zero.
+
+### A.I. 
+
+#### Academic Integrity 
+
+God called us to co-create with Him as a part of our role in bearing His image. Collaboration---in which multiple people labor side-by-side towards a common goal---is a part of God's good design for community and relationship. Learning communities function best when students have academic integrity. Cheating is primarily an offense against your classmates because it undermines our learning community. Therefore, dishonesty of any kind may result in loss of credit for the work involved and the filing of a report with the Provost's Office. Major or repeated infractions may result in dismissal from the course with a grade of "F". Be familiar with the College's plagiarism policy, found at https://www.westmont.edu/office-provost/academic-program/academic-integrity-policy.
+
+In particular, providing someone with an electronic copy of your work is a breach of the academic integrity policy. Do not email, post online, or otherwise disseminate any of the work that you do in this class. If you keep your work on a repository, make sure it is private. You may work with others on the assignments, but make sure that you write or type up your own answers yourself. You are on your honor that the work you hand in represents your own understanding.
+
+#### Artificial Intelligence 
+
+This course is meant to build your perseverance (see CLOs 1,3). Any use of LLMs such as OpenAI will be robbing yourself of your education, and will almost certainly naturally cause you to perform poorly in this course. Any unapproved use of LLMs (etc.) will constitute a breach of academic integrity.
+
+### Accommodations and Accessability 
+Westmont is committed to ensuring equal access to academic courses and college programs. In keeping with this commitment under the Americans with Disabilities Act (ADA)of 1990, Section 504 of the Rehabilitation Act of 1973, and the Americans with Disabilities Amendments Act (ADAAA) of 2008, individuals with diagnoses that impact major life activities are protected from discrimination and are entitled to reasonable accommodations. Students who choose to disclose a disability are encouraged to contact the Accessibility Resource Office (ARO) as early as possible in the semester to discuss potential accommodations for this course. Accommodations are designed to ensure equal access to programs for all students who have a disability that impacts their participation in college activities. Email aro@westmont.edu or see https://www.westmont.edu/accessibility-resources for more information.
+
+
+<!-- \clearpage
+## Tentative Schedule
+
+We will try to conform to the following schedule, although it is subject to revision at the instructor's discretion.
+
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{|l||l|}
+\hline
+\textbf{Section} & \textbf{Topic} \\
+\hline\hline
+ 1 & Introduction to Groups \\ \hline
+ 2 & New Groups from Old \\ \hline
+ 2.1 & Direct Products of Groups \\ \hline
+ 2.2 & Subgroups \\ \hline
+ 2.3 & Cyclic Subgroups \\ \hline
+ 3 & Homomorphisms and Isomorphisms \\ \hline
+ 3.1 & Definitions \\ \hline
+ 3.2 & Preservation of Structure \\ \hline
+ 3.3 & Kernel and Image \\ \hline \hline 
+  & \textbf{First Exam (5\%)} \\ \hline \hline 
+ 4 & Cosets: First Ideas and Applications \\ \hline
+ 4.1 & Definition and Examples \\ \hline
+ 4.2 & Cosets and Partitions \\ \hline
+ 4.3 & Cosets and Group Order \\ \hline
+ 5 & Normal Subgroups and Quotient Groups \\ \hline
+ 5.1 & Normal Subgroups \\ \hline
+ 5.2 & Quotient Groups \\ \hline
+ 5.3 & Isomorphism Theorems \\ \hline
+ 6 & Rings and Ideals \\ \hline
+ 6.1 & Rings \\ \hline
+ 6.2 & Homomorphisms and Kernels \\ \hline
+ 6.3 & Ideals \\ \hline \hline 
+  & \textbf{Second Exam (10\%)} \\ \hline \hline 
+ 7 & Quotient Rings \\ \hline
+ 7.1 & Cosets \\ \hline
+ 7.2 & Constructing Quotient Rings \\ \hline
+ 7.3 & Isomorphisms \\ \hline
+ 8 & Divisibility \\ \hline
+ 8.1 & Integral Domains and Fields \\ \hline
+ 8.2 & The Division Algorithm \\ \hline
+ 8.3 & Greatest Common Divisor \\ \hline
+ 8.4 & The Euclidean Algorithm \\ \hline \hline 
+  & \textbf{Third Exam (15\%)} \\ \hline \hline 
+ 9 & Prime Ideals and Maximal Ideals \\ \hline
+ 9.1 & Roots of Polynomials \\ \hline
+ 9.2 & Prime Ideals \\ \hline
+ 9.3 & Maximal Ideals \\ \hline
+ 9.4 & Field Extensions \\ \hline \hline 
+  & \textbf{Final Exam (20\%)} \\ \hline
+\end{tabular}
+ -->

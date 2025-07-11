@@ -1,0 +1,543 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  twoside]{article}
+\usepackage{xcolor}
+\usepackage[left=1.0in, right=1.0in, top=0.8in, bottom=0.4in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[charter]{mathdesign}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false}
+\pagestyle{fancy}
+\lhead{MA-110 Syllabus, Hansen \the\year{}}
+\rhead{Page \thepage{} of \pageref*{LastPage}}
+\cfoot{}
+\setlength{\headsep}{0.2in}
+
+\titleformat{\section}{\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsubsection}
+   {\large\bfseries}{\thesection}{1em}{}[\hrule width\linewidth]
+
+\usepackage{enumitem}
+
+\setenumerate{leftmargin=*}
+
+\newcommand{\vect}[1]{\mathbf{#1}} % vectors in bold face
+
+%\newcommand{\vect}[1]{\mathbf{#1}\,} % vectors in bold face (need thin
+                                     % space after)
+%\newcommand{\vect}[1]{\vec{#1}} %vectors as arrows
+
+\providecommand{\norm}[1]{\left\lvert#1\right\rvert} % norms as single lines
+%\providecommand{\norm}[1]{\left\lVert#1\right\rVert} % norms as double lines
+
+% bold or blackboard bold!?
+\newcommand{\NN}{\mathbb{N}}
+%\newcommand{\RR}{\mathbf{R}}
+\newcommand{\RR}{\mathbb{R}}
+
+% some useful abbreviations
+\newcommand{\vx}{\vect{x}}
+\newcommand{\vy}{\vect{y}}
+\newcommand{\vz}{\vect{z}}
+\newcommand{\vu}{\vect{u}}
+\newcommand{\vv}{\vect{v}}
+\newcommand{\vw}{\vect{w}}
+\newcommand{\va}{\vect{a}}
+\newcommand{\vb}{\vect{b}}
+\newcommand{\vc}{\vect{c}}
+\newcommand{\ve}{\vect{e}}
+\newcommand{\vf}{\vect{f}}
+\newcommand{\vF}{\vect{F}}
+\newcommand{\vg}{\vect{g}}
+\newcommand{\vh}{\vect{h}}
+\newcommand{\vl}{\vect{l}}
+\newcommand{\vm}{\vect{m}}
+\newcommand{\vn}{\vect{n}}
+\newcommand{\vp}{\vect{p}}
+\newcommand{\vr}{\vect{r}}
+\newcommand{\vs}{\vect{s}}
+\newcommand{\vi}{\vect{i}}
+\newcommand{\vj}{\vect{j}}
+\newcommand{\vk}{\vect{k}}
+\newcommand{\vzero}{\vect{0}}
+% lower-case greek letters are handled differently: poor man's bold macro
+%\newcommand{\vphi}{\pmb{\phi}}
+
+\newcommand{\malename}{Westley} % recurring male name
+\newcommand{\femalename}{Buttercup} % recurring female name
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\section[Abstract Algebra (MA-110) Westmont College, Fall
+2025]{\texorpdfstring{Abstract Algebra (MA-110) Westmont College, Fall
+2025\footnote{Large parts of this syllabus are borrowed from previous
+  syllabi by David Hunter.}}{Abstract Algebra (MA-110) Westmont College, Fall 2025}}\label{abstract-algebra-ma-110-westmont-college-fall-20252}
+
+\begin{tabular}[t]{ll}
+\toprule
+Time & MWF, 8:00am-9:05am\\
+Location & Winter Hall 110\\
+Professor & Kyle Hansen, Ph.D.\\
+Email & kylhansen@westmont.edu\\
+Office & Winter Hall 303\\
+\addlinespace
+Office Hours & TBA\\
+\bottomrule
+\end{tabular}
+
+\subsection{Course Description}\label{course-description}
+
+\subsubsection{(Four credit hours), Prerequisite(s): MA-020 Linear
+Algebra.}\label{four-credit-hours-prerequisites-ma-020-linear-algebra.}
+
+Abstract algebraic patterns pervade modern mathematics. Given simple
+definitions of groups, rings, and fields, this course develops the
+intricate theory of these objects, including permutation groups,
+subgroups, quotient groups and rings, isomorphisms, and extension
+fields.
+
+\subsubsection{Put another way\ldots{}}\label{put-another-way}
+
+This class is the study of the operations of multiplication and addition
+(and, secretly, function composition) set in their most abstract form.
+Starting with only and handful of definitions and even fewer
+assumptions, we proceed axiomatically to deduce a large volume of
+powerful mathematical results. The material in this course (and the
+sequel, MA-111) represents the consequences of some very low-level
+mathematical foundations: logic, sets, and the integers. These ideas
+have far-reaching applications throughout pure and applied mathematics,
+and are part of the \emph{lingua franca} of the discipline. Throughout
+this semester and the next (the highlight of this course), you will be
+guided through a series of deductive discoveries along the path that
+modern mathematicians have blazed. Whether this path is the only
+reasonable one will be yours to judge once you have completed the
+journey.
+
+``\emph{But where's the quadratic formula?}'' you ask. Indeed,
+historically, much of this subject was motivated by the search for
+solutions to polynomial equations: are there analogs to the quadratic
+formula for polynomials of degree greater than 2? We take our time to
+get there, but eventually our trajectory will lead us into study of
+roots of polynomial equations, as you might expect, but keep your eyes
+peeled and your head up---your perspective on these innocent-looking
+functions will be pushed into deeper, higher, more abstract realms of
+the subject.
+
+\subsection{Learning Outcomes}\label{learning-outcomes}
+
+\subsubsection{Institutional Learning Outcomes
+(ILO's)}\label{institutional-learning-outcomes-ilos}
+
+The faculty of Westmont College have established common learning
+outcomes for all courses at the institution. These outcomes are
+summarized as follows: 1. Christian Understanding, Practices, and
+Affections, 2. Global Awareness and Diversity, 3. Critical Thinking, 4.
+Quantitative Literacy, 5. Written Communication, 6. Oral Communication,
+and 7. Information Literacy.
+
+\subsubsection{Program Learning Outcomes
+(PLO's)}\label{program-learning-outcomes-plos}
+
+Additionally, the mathematics department at Westmont College has
+formulated the following learning outcomes for all of its classes.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Core Knowledge:} Students will demonstrate knowledge of the
+  main concepts, skills, and facts of the discipline of mathematics.
+\item
+  \textbf{Communication:} Students will be able to communicate
+  mathematical ideas following the standard conventions of writing or
+  speaking in the discipline.
+\item
+  \textbf{Creativity:} Students will demonstrate the ability to
+  formulate and make progress toward solving non-routine problems.
+\item
+  \textbf{Christian Connection:} Students will incorporate their
+  mathematical skills and knowledge into their thinking about their
+  vocations as followers of Christ.
+\end{enumerate}
+
+\subsubsection{Course Learning Outcomes
+(CLOs)}\label{course-learning-outcomes-clos}
+
+The above outcomes are reflected in the particular learning outcomes for
+this course. After taking this course, you should be able to
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Demonstrate understanding of modern abstract algebra. (PLO 1, ILOs
+  3,4)
+\item
+  Write mathematical arguments according to the standards of the
+  discipline. (PLO 2, ILOs 3,5)
+\item
+  Construct solutions to novel problems, demonstrating perseverance in
+  the face of open-ended or partially-defined contexts. (PLO 3, ILO 3)
+\item
+  Consider the theological implications of the subject matter. (PLO 4,
+  ILO 1)
+\end{enumerate}
+
+These outcomes will be assessed by written prework assignments, typeset
+final drafts, and written exams, as described
+\hyperref[course-logistics]{below}.
+
+\subsubsection{General Education Writing Intensive
+Course}\label{general-education-writing-intensive-course}
+
+In addition to the above Learning Outcomes, this course is classified as
+``writing intensive'' for the purposes of Westmont's general education
+requirements. Therefore we will spend a significant amount of time
+learning how to write mathematically. Your written prework assignments
+will contain many problems where you are asked to ``prove'' something,
+and I will grade these proofs taking both correctness and exposition
+into account. A selection of problems will be assigned for you to
+typeset carefully and submit a final draft, doing revisions as
+necessary. I expect you all to make progress in your ability to write
+mathematically.
+
+\subsection{Course Logistics}\label{course-logistics}
+
+\subsubsection{Textbook}\label{textbook}
+
+The text for this course is \emph{Abstract Algebra I \& II}, by David
+Hunter, made freely available and used with his permission. These are a
+revised and expanded version of \emph{Introductory Abstract Algebra}, by
+Margaret L. Morrow, \emph{Journal of Inquiry Based Learning in
+Mathematics} \textbf{26}, (2012). Morrow's notes provide a gentle,
+inquiry-based introduction to group theory, with Hunter adding several
+chapters which cover rings and fields.\footnote{This is not a
+  ``traditional'' textbook, and requires your active participation in
+  its completion. Throughout the semester you will be adding pages of
+  notes, prework, and final drafts to your binder, which will evolve
+  into a complete text that you have taken part in writing.}
+
+\subsubsection{Grades}\label{grades}
+
+To assess how well we meet some of the designated Learning Outcomes, you
+will receive regular grades on your written prework and typeset final
+drafts. You will find grades and feedback on Canvas. In addition, there
+will be four traditional exams and weekly quizzes. Grades are weighted
+as follows.
+
+\begin{tabular}[t]{ll}
+\toprule
+Written Prework Assignments & 15\%\\
+Presentations and Participation & 10\%\\
+Typeset Final Drafts & 15\%\\
+Quizzes (top 10) & 1\% each (10\% total)\\
+Exams (3) & 5\% + 10\% + 15\% (30\% total)\\
+\addlinespace
+Final Exam & 20\%\\
+\bottomrule
+\end{tabular}
+
+\subsubsection{Written Work \& Participation
+(40\%)}\label{written-work-participation-40}
+
+We will work through a series of problems that, along with the sequel,
+give a comprehensive coverage of two semesters of advanced undergraduate
+or beginning graduate algebra. Ideally, you will supply the answers.
+Your written accounts of your inquiry and our class discussions will
+produce a complete modern algebra textbook of your own construction.
+
+This course is meant to prepare you for your future studies and work.
+You will inevitably encounter mathematical concepts in situations where
+nobody is there to explain things to you. I want you to develop the
+necessary skills of inquiry to prepare you for these encounters.
+Therefore, I will often be expecting you to find answers to problems
+yourself. There will be times when I intentionally leave things
+unexplained for you to figure out. This is part of an educational
+strategy designed to make you a better thinker.
+
+Unless you are told otherwise, \textbf{do not use outside resources}
+(e.g., Internet, books, LLMs) when you work on the assignments. I would
+rather see a half-right solution that you have constructed yourself than
+a perfect solution that somebody else constructed.
+
+This course presents an opportunity for you to grow in your ability to
+work by yourself. I strongly recommend that you
+\textbf{spend time alone with the assigned problems} before working with
+others. If you do work with others on an assignment, please include a
+note on your assignment indicating the names of those you worked with.
+And remember that
+\textbf{the work you hand in should represent your own understanding.}
+
+There will typically be three phases to the inquiry process, all focused
+on the sequence of problems from the text.
+
+\paragraph{Prework (15\%)}\label{prework-15}
+
+On most days, there will be a written assignment due the night before
+class. My expectation is that these prework assignments will be hand
+written; I encourage you to find an efficient notebook system that
+allows you to intersperse hand-outs and your own written work. A
+three-ring binder works well for this purpose.
+
+Use a scanner app (e.g., Genius Scan, Adobe Scan) to make a PDF of your
+prework and submit it on Gradescope. If your prework spans multiple
+pages, please combine all pages into a single PDF file. Be sure that
+each page is properly matched and in the correct orientation.
+
+In general, you can receive full credit for less-than-perfect prework
+assignments, as long as you make significant progress on each problem.
+Making progress can include writing down the first and last lines of the
+proof, and formulating some questions about what you didn't understand.
+
+\paragraph{Class Discussion (10\%)}\label{class-discussion-10}
+
+The bulk of our class time will be spent discussing the assigned
+problems that you have attempted in the prework phase. On most days, you
+will be assigned one or more of the problems to present at the board.
+First, students write their solutions (or partial solutions) on the
+board. Once everyone has finished, we will discuss all the problems
+together in whole-class discussion. During these discussions you should
+focus on correcting and completing the proofs from your prework
+assignments. Since there is not a traditional textbook for this class,
+you have the responsibility of recording your own complete solutions for
+every problem.
+
+\paragraph{Final Drafts (15\%)}\label{final-drafts-15}
+
+Each week, a selection of problems will be assigned for you to typeset a
+final draft of solutions. These final drafts will be graded on logic,
+exposition, and formatting. You should add your graded and corrected
+final drafts to your binder, which will grow into a textbook of your own
+construction.
+
+\subsubsection{Assessments (60\%)}\label{assessments-60}
+
+Research shows that one cannot understand a subject unless one can
+recall the necessary material with ease. One most easily recalls
+material when one has been given practice recalling it.
+
+\paragraph{Quizzes (10\%)}\label{quizzes-10}
+
+Weekly quizzes at the end of class on Friday will give you practice
+recalling definitions or performing simple calculations covered from the
+prework material of the previous week (Friday through Wednesday). At
+most, your top 10 quizzes will be graded; all others will be dropped.
+
+\paragraph{Exams (50\%)}\label{exams-50}
+
+This course will have three (3) midterm exams and one (1) final exam.
+These exams will not be rescheduled, and absences will count as 0
+points. Exams may not be made up. Exams will (naturally) be cumulative,
+loosely paired with each unit. To reflect this cumulative nature and to
+help you develop a ``growth mindset'' throughout this course, exam
+percentages will increase as the term progresses.
+
+\subsubsection{Unit Schedule}\label{unit-schedule}
+
+A separate document will be provided which outlines the specific dates
+and assignments due throughout the course. We will attempt to adhere to
+the following general schedule for this course, with exams punctuating
+the end of each unit:
+
+\paragraph{Unit 1: Elementary Group
+Theory}\label{unit-1-elementary-group-theory}
+
+\begin{itemize}
+\tightlist
+\item
+  Definitions (§1), Constructions (§2), and Homomorphisms (§3) of
+  Groups.
+\item
+  Exam (5\%) on September 29.
+\end{itemize}
+
+\paragraph{Unit 2: Structure in
+Groups}\label{unit-2-structure-in-groups}
+
+\begin{itemize}
+\tightlist
+\item
+  Cosets (§4), Quotients (§5.1-§5.2), and Isomorphism Theorems (§5.3) of
+  Groups.
+\item
+  Exam (10\%) on October 27.
+\end{itemize}
+
+\paragraph{Unit 3: Rings, Ideals, and
+Fields}\label{unit-3-rings-ideals-and-fields}
+
+\begin{itemize}
+\tightlist
+\item
+  Elementary Theory (§6), Quotients (§7), and Divisibility (§8) of
+  Rings.
+\item
+  Exam (15\%) on November 24.
+\end{itemize}
+
+\paragraph{Polynomial Rings and Field
+Extensions}\label{polynomial-rings-and-field-extensions}
+
+\begin{itemize}
+\tightlist
+\item
+  Polynomials (§9.1), Prime \& Maximal Ideals (§9.2-§9.3), and Field
+  Extensions (§9.4)
+\item
+  Final exam (20\%) on December 18.
+\end{itemize}
+
+\subsection{Resources, Policies, and
+Expectations}\label{resources-policies-and-expectations}
+
+\subsubsection{Attendance}\label{attendance}
+
+One of the primary resources you have in this class is the class time
+itself. If you miss a significant number of classes, you will almost
+definitely do poorly in this class. If you miss more than six classes
+without a valid excuse, I reserve the right to terminate you from the
+course with a failing grade.
+
+\subsubsection{Assignment and
+Assessments}\label{assignment-and-assessments}
+
+All assignments and assessments must be turned in by the start of class
+on the day they are due. Work missed (including tests) without a valid
+excuse will receive a zero.
+
+\subsubsection{A.I.}\label{a.i.}
+
+\paragraph{Academic Integrity}\label{academic-integrity}
+
+God called us to co-create with Him as a part of our role in bearing His
+image. Collaboration---in which multiple people labor side-by-side
+towards a common goal---is a part of God's good design for community and
+relationship. Learning communities function best when students have
+academic integrity. Cheating is primarily an offense against your
+classmates because it undermines our learning community. Therefore,
+dishonesty of any kind may result in loss of credit for the work
+involved and the filing of a report with the Provost's Office. Major or
+repeated infractions may result in dismissal from the course with a
+grade of ``F''. Be familiar with the College's plagiarism policy, found
+at
+\url{https://www.westmont.edu/office-provost/academic-program/academic-integrity-policy}.
+
+In particular, providing someone with an electronic copy of your work is
+a breach of the academic integrity policy. Do not email, post online, or
+otherwise disseminate any of the work that you do in this class. If you
+keep your work on a repository, make sure it is private. You may work
+with others on the assignments, but make sure that you write or type up
+your own answers yourself. You are on your honor that the work you hand
+in represents your own understanding.
+
+\paragraph{Artificial Intelligence}\label{artificial-intelligence}
+
+This course is meant to build your perseverance (see CLOs 1,3). Any use
+of LLMs such as OpenAI will be robbing yourself of your education, and
+will almost certainly naturally cause you to perform poorly in this
+course. Any unapproved use of LLMs (etc.) will constitute a breach of
+academic integrity.
+
+\subsubsection{Accommodations and
+Accessability}\label{accommodations-and-accessability}
+
+Westmont is committed to ensuring equal access to academic courses and
+college programs. In keeping with this commitment under the Americans
+with Disabilities Act (ADA)of 1990, Section 504 of the Rehabilitation
+Act of 1973, and the Americans with Disabilities Amendments Act (ADAAA)
+of 2008, individuals with diagnoses that impact major life activities
+are protected from discrimination and are entitled to reasonable
+accommodations. Students who choose to disclose a disability are
+encouraged to contact the Accessibility Resource Office (ARO) as early
+as possible in the semester to discuss potential accommodations for this
+course. Accommodations are designed to ensure equal access to programs
+for all students who have a disability that impacts their participation
+in college activities. Email
+\href{mailto:aro@westmont.edu}{\nolinkurl{aro@westmont.edu}} or see
+\url{https://www.westmont.edu/accessibility-resources} for more
+information.
+
+\end{document}

@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "MA-110"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: syllabus/syllabus.Rmd
+        text: Syllabus
+      - schedule.qmd
+  
+  page-footer: 
+    center:
+      - text: "\"The moving power of mathematical invention is not reasoning, but imagination.\" —Augustus De Morgan"
+    border: true
+    background: $primary
+
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme: 
+      light: 
+        - flatly
+        - sty/light.scss
+      dark: 
+        - darkly
+        - sty/dark.scss
+    css: sty/styles.css
+    toc: true
+    toc-location: right 
+
+
+
