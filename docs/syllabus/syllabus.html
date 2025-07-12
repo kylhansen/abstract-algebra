@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../media/images/sunflower.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -41,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d062bb0c0344c8bcb4c10617756be75a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-51734811a2a9a1ede69c8f9d95134470.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-d062bb0c0344c8bcb4c10617756be75a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1c1b1621e77f321e1a6bb26ed783b442.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-7834f1c8dd4380bf8ccbdbd64ddc8087.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1c1b1621e77f321e1a6bb26ed783b442.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -275,9 +276,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">schedule.qmd</span>
-    </span>
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -324,6 +324,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#assignment-and-assessments" id="toc-assignment-and-assessments" class="nav-link" data-scroll-target="#assignment-and-assessments">Assignment and Assessments</a></li>
   <li><a href="#a.i." id="toc-a.i." class="nav-link" data-scroll-target="#a.i.">A.I.</a></li>
   <li><a href="#accommodations-and-accessability" id="toc-accommodations-and-accessability" class="nav-link" data-scroll-target="#accommodations-and-accessability">Accommodations and Accessability</a></li>
+  <li><a href="#digital-tools" id="toc-digital-tools" class="nav-link" data-scroll-target="#digital-tools">Digital Tools</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -553,57 +554,10 @@ kbl(t(scheudle), booktabs = TRUE)
 <section id="accommodations-and-accessability" class="level3">
 <h3 class="anchored" data-anchor-id="accommodations-and-accessability">Accommodations and Accessability</h3>
 <p>Westmont is committed to ensuring equal access to academic courses and college programs. In keeping with this commitment under the Americans with Disabilities Act (ADA)of 1990, Section 504 of the Rehabilitation Act of 1973, and the Americans with Disabilities Amendments Act (ADAAA) of 2008, individuals with diagnoses that impact major life activities are protected from discrimination and are entitled to reasonable accommodations. Students who choose to disclose a disability are encouraged to contact the Accessibility Resource Office (ARO) as early as possible in the semester to discuss potential accommodations for this course. Accommodations are designed to ensure equal access to programs for all students who have a disability that impacts their participation in college activities. Email <a href="mailto:aro@westmont.edu">aro@westmont.edu</a> or see <a href="https://www.westmont.edu/accessibility-resources" class="uri">https://www.westmont.edu/accessibility-resources</a> for more information.</p>
-<!-- \clearpage
-## Tentative Schedule
-
-We will try to conform to the following schedule, although it is subject to revision at the instructor's discretion.
-
-\renewcommand{\arraystretch}{1.1}
-\begin{tabular}{|l||l|}
-\hline
-\textbf{Section} & \textbf{Topic} \\
-\hline\hline
- 1 & Introduction to Groups \\ \hline
- 2 & New Groups from Old \\ \hline
- 2.1 & Direct Products of Groups \\ \hline
- 2.2 & Subgroups \\ \hline
- 2.3 & Cyclic Subgroups \\ \hline
- 3 & Homomorphisms and Isomorphisms \\ \hline
- 3.1 & Definitions \\ \hline
- 3.2 & Preservation of Structure \\ \hline
- 3.3 & Kernel and Image \\ \hline \hline 
-  & \textbf{First Exam (5\%)} \\ \hline \hline 
- 4 & Cosets: First Ideas and Applications \\ \hline
- 4.1 & Definition and Examples \\ \hline
- 4.2 & Cosets and Partitions \\ \hline
- 4.3 & Cosets and Group Order \\ \hline
- 5 & Normal Subgroups and Quotient Groups \\ \hline
- 5.1 & Normal Subgroups \\ \hline
- 5.2 & Quotient Groups \\ \hline
- 5.3 & Isomorphism Theorems \\ \hline
- 6 & Rings and Ideals \\ \hline
- 6.1 & Rings \\ \hline
- 6.2 & Homomorphisms and Kernels \\ \hline
- 6.3 & Ideals \\ \hline \hline 
-  & \textbf{Second Exam (10\%)} \\ \hline \hline 
- 7 & Quotient Rings \\ \hline
- 7.1 & Cosets \\ \hline
- 7.2 & Constructing Quotient Rings \\ \hline
- 7.3 & Isomorphisms \\ \hline
- 8 & Divisibility \\ \hline
- 8.1 & Integral Domains and Fields \\ \hline
- 8.2 & The Division Algorithm \\ \hline
- 8.3 & Greatest Common Divisor \\ \hline
- 8.4 & The Euclidean Algorithm \\ \hline \hline 
-  & \textbf{Third Exam (15\%)} \\ \hline \hline 
- 9 & Prime Ideals and Maximal Ideals \\ \hline
- 9.1 & Roots of Polynomials \\ \hline
- 9.2 & Prime Ideals \\ \hline
- 9.3 & Maximal Ideals \\ \hline
- 9.4 & Field Extensions \\ \hline \hline 
-  & \textbf{Final Exam (20\%)} \\ \hline
-\end{tabular}
- -->
+</section>
+<section id="digital-tools" class="level3">
+<h3 class="anchored" data-anchor-id="digital-tools">Digital Tools</h3>
+<p>Unless arrangements have been made ahead of time, either on an individual basis or a classwide basis, digital tools will not be allowed in the classroom from 5 minutes before the start of class until the end of class. These tools include (but are not limited to): cell phones, laptops, tablets, smart watches (watches which do not “talk” with phones are okay). For example, if class runs from 10:15-11:20am, cell phones may not be used between 10:10-11:20am while inside the classroom. This policy includes myself, and is intended to give us a focused break from the digital realm.</p>
 
 
 </section>

@@ -1,0 +1,229 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[charter]{mathdesign}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false}
+\pagestyle{fancy}
+\lhead{MA-110 Syllabus, Hansen \the\year{}}
+\rhead{Page \thepage{} of \pageref*{LastPage}}
+\cfoot{}
+\setlength{\headsep}{0.2in}
+
+\titleformat{\section}{\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsubsection}
+   {\large\bfseries}{\thesection}{1em}{}[\hrule width\linewidth]
+
+\usepackage{enumitem}
+
+\setenumerate{leftmargin=*}
+
+\newcommand{\vect}[1]{\mathbf{#1}} % vectors in bold face
+
+%\newcommand{\vect}[1]{\mathbf{#1}\,} % vectors in bold face (need thin
+                                     % space after)
+%\newcommand{\vect}[1]{\vec{#1}} %vectors as arrows
+
+\providecommand{\norm}[1]{\left\lvert#1\right\rvert} % norms as single lines
+%\providecommand{\norm}[1]{\left\lVert#1\right\rVert} % norms as double lines
+
+% bold or blackboard bold!?
+\newcommand{\NN}{\mathbb{N}}
+%\newcommand{\RR}{\mathbf{R}}
+\newcommand{\RR}{\mathbb{R}}
+
+% some useful abbreviations
+\newcommand{\vx}{\vect{x}}
+\newcommand{\vy}{\vect{y}}
+\newcommand{\vz}{\vect{z}}
+\newcommand{\vu}{\vect{u}}
+\newcommand{\vv}{\vect{v}}
+\newcommand{\vw}{\vect{w}}
+\newcommand{\va}{\vect{a}}
+\newcommand{\vb}{\vect{b}}
+\newcommand{\vc}{\vect{c}}
+\newcommand{\ve}{\vect{e}}
+\newcommand{\vf}{\vect{f}}
+\newcommand{\vF}{\vect{F}}
+\newcommand{\vg}{\vect{g}}
+\newcommand{\vh}{\vect{h}}
+\newcommand{\vl}{\vect{l}}
+\newcommand{\vm}{\vect{m}}
+\newcommand{\vn}{\vect{n}}
+\newcommand{\vp}{\vect{p}}
+\newcommand{\vr}{\vect{r}}
+\newcommand{\vs}{\vect{s}}
+\newcommand{\vi}{\vect{i}}
+\newcommand{\vj}{\vect{j}}
+\newcommand{\vk}{\vect{k}}
+\newcommand{\vzero}{\vect{0}}
+% lower-case greek letters are handled differently: poor man's bold macro
+%\newcommand{\vphi}{\pmb{\phi}}
+
+\newcommand{\malename}{Westley} % recurring male name
+\newcommand{\femalename}{Buttercup} % recurring female name
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Schedule},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Schedule}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\begin{longtable}[t]{llllllll}
+\toprule
+Date & MWF & Week & Preview Due & Typeset & Quiz & Exam & Other\\
+\midrule
+2025/09/01 & M & 1 &  &  &  &  & syllabus\\
+2025/09/03 & W & 1 & 1—4 &  &  &  & \\
+2025/09/05 & F & 1 & 5—11 &  & Syllabus &  & \\
+\Xhline{1.2pt}\\
+2025/09/08 & M & 2 & 12—16 &  &  &  & \\
+2025/09/10 & W & 2 & 17—22 & Typeset 1 &  &  & \\
+\addlinespace
+2025/09/12 & F & 2 & 23—28 &  & 1—22 &  & \\
+\Xhline{1.2pt}\\
+2025/09/15 & M & 3 & 29—34 &  &  &  & \\
+2025/09/17 & W & 3 & 35—39 & Typeset 2 &  &  & \\
+2025/09/19 & F & 3 & 40—44 &  & 23—39 &  & \\
+\Xhline{1.2pt}\\
+2025/09/22 & M & 4 & 45—48 &  &  &  & \\
+\addlinespace
+2025/09/24 & W & 4 & 49—53 & Typeset 3 &  &  & \\
+2025/09/26 & F & 4 &  &  & 40—53 &  & Review\\
+\Xhline{1.2pt}\\
+2025/09/29 & M & 5 &  &  &  & 1—53 & \\
+2025/10/01 & W & 5 & 54—59 & Typeset 4 &  &  & \\
+2025/10/03 & F & 5 & 60—63 &  & 54—59 &  & \\
+\Xhline{1.2pt}\\
+\addlinespace
+2025/10/06 & M & 6 & 64—68 &  &  &  & \\
+2025/10/08 & W & 6 & 69—72 & Typeset 5 &  &  & \\
+2025/10/10 & F & 6 & 73—77 &  & 60—72 &  & \\
+\Xhline{1.2pt}\\
+2025/10/13 & M & 7 &  &  &  &  & Fall Break\\
+2025/10/15 & W & 7 & 78—81 & Typeset 6 &  &  & \\
+\addlinespace
+2025/10/17 & F & 7 & 82—85 &  & 73—81 &  & \\
+\Xhline{1.2pt}\\
+2025/10/20 & M & 8 & 86—90 &  &  &  & \\
+2025/10/22 & W & 8 & 91—95 & Typeset 7 &  &  & \\
+2025/10/24 & F & 8 &  &  & 82—95 &  & Review\\
+\Xhline{1.2pt}\\
+2025/10/27 & M & 9 &  &  &  & 1—90 & \\
+\addlinespace
+2025/10/29 & W & 9 & 96—101 & Typeset 8 &  &  & \\
+2025/10/31 & F & 9 & 102—106 &  & 96—101 &  & \\
+\Xhline{1.2pt}\\
+2025/11/03 & M & 10 & 107—111 &  &  &  & \\
+2025/11/05 & W & 10 & 112—116 & Typeset 9 &  &  & \\
+2025/11/07 & F & 10 & 117—121 &  & 102—116 &  & \\
+\Xhline{1.2pt}\\
+\addlinespace
+2025/11/10 & M & 11 & 122—127 &  &  &  & \\
+2025/11/12 & W & 11 & 128—133 & Typeset 10 &  &  & \\
+2025/11/14 & F & 11 & 134—139 &  & 117—133 &  & \\
+\Xhline{1.2pt}\\
+2025/11/17 & M & 12 & 140—145 &  &  &  & \\
+2025/11/19 & W & 12 & 146—150 & Typeset 11 &  &  & \\
+\addlinespace
+2025/11/21 & F & 12 &  &  & 134—150 &  & Review\\
+\Xhline{1.2pt}\\
+2025/11/24 & M & 13 &  &  &  & 1—150 & \\
+2025/11/26 & W & 13 &  &  &  &  & Thanksgiving Break\\
+2025/11/28 & F & 13 &  &  &  &  & Thanksgiving Break\\
+\Xhline{1.2pt}\\
+2025/12/01 & M & 14 & 151—156 &  &  &  & \\
+\addlinespace
+2025/12/03 & W & 14 & 157—162 & Typeset 12 &  &  & \\
+2025/12/05 & F & 14 & 163—166 &  & 151—162 &  & \\
+\Xhline{1.2pt}\\
+2025/12/08 & M & 15 & 167—171 &  &  &  & \\
+2025/12/10 & W & 15 &  & Typeset 13 &  &  & Review\\
+2025/12/12 & F & 15 &  &  & 163—171 &  & Review\\
+\Xhline{1.2pt}\\
+\addlinespace
+2025/12/18 & R & 16 &  &  &  & 1—171 & \\
+\bottomrule
+\end{longtable}
+
+\end{document}

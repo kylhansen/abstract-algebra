@@ -1,5 +1,9 @@
 ---
-title: "Abstract Algebra"
+title: "Welcome!"
 ---
 
+[Syllabus](syllabus/syllabus.qmd)
 
+[Schedule](schedule.qmd)
+
+[Textbook](media/papers/hunter-algebra.pdf)

@@ -6,8 +6,6 @@ output:
     keep_tex: true
     includes:
       in_header: latex-header.tex
-urlcolor: blue
-linkcolor: blue
 ---
 
 ```{r setup, include=FALSE}
