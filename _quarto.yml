@@ -8,7 +8,7 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: syllabus/syllabus.Rmd
+      - href: syllabus/syllabus.qmd
         text: Syllabus
       - schedule.qmd
   

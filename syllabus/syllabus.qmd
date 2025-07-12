@@ -42,13 +42,14 @@ These ideas have far-reaching applications throughout pure and applied mathemati
 
 ### Institutional Learning Outcomes (ILO's)
 The faculty of Westmont College have established common learning outcomes for all courses at the institution. These outcomes are summarized as follows:
-1. Christian Understanding, Practices, and Affections,
-2. Global Awareness and Diversity,
-3. Critical Thinking,
-4. Quantitative Literacy,
-5. Written Communication,
-6. Oral Communication, and
-7. Information Literacy.
+1. Christian Understanding, Practices, and Affections, 
+2. Global Awareness, 
+3. Diversity, 
+4. Critical Thinking, 
+5. Quantitative Literacy, 
+6. Competence in Written Communication, 
+7. Competence in Oral Communication, and 
+8. Information Literacy.
 
 ### Program Learning Outcomes (PLO's) 
 Additionally, the mathematics department at Westmont College has formulated the following learning outcomes for all of its classes. 
@@ -169,16 +170,16 @@ All assignments and assessments must be turned in by the start of class on the d
 
 #### Academic Integrity 
 
-God called us to co-create with Him as a part of our role in bearing His image. Collaboration---in which multiple people labor side-by-side towards a common goal---is a part of God's good design for community and relationship. Learning communities function best when students have academic integrity. Cheating is primarily an offense against your classmates because it undermines our learning community. Therefore, dishonesty of any kind may result in loss of credit for the work involved and the filing of a report with the Provost's Office. Major or repeated infractions may result in dismissal from the course with a grade of "F". Be familiar with the College's plagiarism policy, found at https://www.westmont.edu/office-provost/academic-program/academic-integrity-policy.
+God called us to co-create with Him as a part of our role in bearing His image. Collaboration---in which multiple people labor side-by-side towards a common goal---is a part of God's good design for community and relationship. Learning communities function best when students have academic integrity. Cheating is primarily an offense against your classmates because it undermines our learning community. Therefore, dishonesty of any kind may result in loss of credit for the work involved and the filing of a report with the Provost's Office. Major or repeated infractions may result in dismissal from the course with a grade of "F". Be familiar with the College's plagiarism policy, found at <https://www.westmont.edu/office-provost/academic-program/academic-integrity-policy>.
 
 In particular, providing someone with an electronic copy of your work is a breach of the academic integrity policy. Do not email, post online, or otherwise disseminate any of the work that you do in this class. If you keep your work on a repository, make sure it is private. You may work with others on the assignments, but make sure that you write or type up your own answers yourself. You are on your honor that the work you hand in represents your own understanding.
 
 #### Artificial Intelligence 
 
-This course is meant to build your perseverance (see CLOs 1,3). Any use of LLMs such as OpenAI will be robbing yourself of your education, and will almost certainly naturally cause you to perform poorly in this course. Any unapproved use of LLMs (etc.) will constitute a breach of academic integrity.
+This course is meant to build your perseverance (see CLOs 1,3). Any use of LLMs (etc.) will be robbing yourself of your education, and will almost certainly naturally cause you to perform poorly in this course. Any unapproved use of LLMs (etc.) will constitute a breach of academic integrity.
 
 ### Accommodations and Accessability 
-Westmont is committed to ensuring equal access to academic courses and college programs. In keeping with this commitment under the Americans with Disabilities Act (ADA)of 1990, Section 504 of the Rehabilitation Act of 1973, and the Americans with Disabilities Amendments Act (ADAAA) of 2008, individuals with diagnoses that impact major life activities are protected from discrimination and are entitled to reasonable accommodations. Students who choose to disclose a disability are encouraged to contact the Accessibility Resource Office (ARO) as early as possible in the semester to discuss potential accommodations for this course. Accommodations are designed to ensure equal access to programs for all students who have a disability that impacts their participation in college activities. Email aro@westmont.edu or see https://www.westmont.edu/accessibility-resources for more information.
+Westmont is committed to ensuring equal access to academic courses and college programs. In keeping with this commitment under the Americans with Disabilities Act (ADA)of 1990, Section 504 of the Rehabilitation Act of 1973, and the Americans with Disabilities Amendments Act (ADAAA) of 2008, individuals with diagnoses that impact major life activities are protected from discrimination and are entitled to reasonable accommodations. Students who choose to disclose a disability are encouraged to contact the Accessibility Resource Office (ARO) as early as possible in the semester to discuss potential accommodations for this course. Accommodations are designed to ensure equal access to programs for all students who have a disability that impacts their participation in college activities. Email [aro@westmont.edu](mailto:aro@westmont.edu) or see <https://www.westmont.edu/accessibility-resources> for more information.
 
 
 <!-- \clearpage
