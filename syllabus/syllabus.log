@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.21)  11 JUL 2025 16:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.21)  11 JUL 2025 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1062,23 +1062,25 @@ ocal/texlive/2023/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}
 ]
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 6.72005pt on input line 297.
+LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
+(Font)              scaled to size 7.68005pt on input line 308.
 [2]
 LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line
- 431.
+ 432.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdbch.fd
 File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 )
 LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 431.
+(Font)              scaled to size 9.60007pt on input line 432.
 [3] [4] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./syllabus.aux) ) 
 Here is how much of TeX's memory you used:
- 18233 strings out of 476025
- 290324 string characters out of 5790016
+ 18250 strings out of 476025
+ 290532 string characters out of 5790016
  1866388 words of memory out of 5000000
- 37955 multiletter control sequences out of 15000+600000
- 586298 words of font info for 337 fonts, out of 8000000 for 9000
+ 37957 multiletter control sequences out of 15000+600000
+ 589853 words of font info for 346 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,12n,68p,1197b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/bitstrea/char
@@ -1086,10 +1088,10 @@ ter/bchb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter
 /bchr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bc
 hri8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdb
 ch/md-chr8t.pfb>
-Output written on syllabus.pdf (4 pages, 70727 bytes).
+Output written on syllabus.pdf (4 pages, 71189 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 84129 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 90273 words of extra memory for PDF output out of 106986 (max. 10000000)
 

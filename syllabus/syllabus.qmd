@@ -83,7 +83,9 @@ Morrow's notes provide a gentle, inquiry-based introduction to group theory, wit
 [^1]: This is not a "traditional" textbook, and requires your active participation in its completion. Throughout the semester you will be adding pages of notes, prework, and final drafts to your binder, which will evolve into a complete text that you have taken part in writing.
 
 ### Grades 
-To assess how well we meet some of the designated Learning Outcomes, you will receive regular grades on your written prework and typeset final drafts. You will find grades and feedback on Canvas. In addition, there will be four traditional exams and weekly quizzes. Grades are weighted as follows.
+To assess how well we meet some of the designated Learning Outcomes, you will receive regular grades on your written prework and typeset final drafts. You will find grades and feedback on Canvas.[^3] In addition, there will be four traditional exams and weekly quizzes. Grades are weighted as follows.
+
+[^3]: *Caveat*: Canvas doesn't always calculate grades properly. 
 
 ```{r echo=FALSE}
 kbl(data.frame(x = c("Written Prework Assignments", "Presentations and Participation", "Typeset Final Drafts", "Quizzes (top 10)", "Exams (3)", "Final Exam"),
@@ -127,7 +129,7 @@ Weekly quizzes at the end of class on Friday will give you practice recalling de
 
 #### Exams (50%)
 
-This course will have three (3) midterm exams and one (1) final exam. These exams will not be rescheduled, and absences will count as 0 points. Exams may not be made up. Exams will (naturally) be cumulative, loosely paired with each unit. To reflect this cumulative nature and to help you develop a "growth mindset" throughout this course, exam percentages will increase as the term progresses. 
+This course will have three (3) midterm exams and one (1) final exam. These exams will not be rescheduled, and absences will count as 0 points. Exams will (naturally) be cumulative, loosely paired with each unit. To reflect this cumulative nature and to help you develop a "growth mindset" throughout this course, exam percentages will increase as the term progresses. 
 
 ### Unit Schedule
 
@@ -181,55 +183,7 @@ This course is meant to build your perseverance (see CLOs 1,3). Any use of LLMs 
 ### Accommodations and Accessability 
 Westmont is committed to ensuring equal access to academic courses and college programs. In keeping with this commitment under the Americans with Disabilities Act (ADA)of 1990, Section 504 of the Rehabilitation Act of 1973, and the Americans with Disabilities Amendments Act (ADAAA) of 2008, individuals with diagnoses that impact major life activities are protected from discrimination and are entitled to reasonable accommodations. Students who choose to disclose a disability are encouraged to contact the Accessibility Resource Office (ARO) as early as possible in the semester to discuss potential accommodations for this course. Accommodations are designed to ensure equal access to programs for all students who have a disability that impacts their participation in college activities. Email [aro@westmont.edu](mailto:aro@westmont.edu) or see <https://www.westmont.edu/accessibility-resources> for more information.
 
+### Digital Tools
 
-<!-- \clearpage
-## Tentative Schedule
-
-We will try to conform to the following schedule, although it is subject to revision at the instructor's discretion.
-
-\renewcommand{\arraystretch}{1.1}
-\begin{tabular}{|l||l|}
-\hline
-\textbf{Section} & \textbf{Topic} \\
-\hline\hline
- 1 & Introduction to Groups \\ \hline
- 2 & New Groups from Old \\ \hline
- 2.1 & Direct Products of Groups \\ \hline
- 2.2 & Subgroups \\ \hline
- 2.3 & Cyclic Subgroups \\ \hline
- 3 & Homomorphisms and Isomorphisms \\ \hline
- 3.1 & Definitions \\ \hline
- 3.2 & Preservation of Structure \\ \hline
- 3.3 & Kernel and Image \\ \hline \hline 
-  & \textbf{First Exam (5\%)} \\ \hline \hline 
- 4 & Cosets: First Ideas and Applications \\ \hline
- 4.1 & Definition and Examples \\ \hline
- 4.2 & Cosets and Partitions \\ \hline
- 4.3 & Cosets and Group Order \\ \hline
- 5 & Normal Subgroups and Quotient Groups \\ \hline
- 5.1 & Normal Subgroups \\ \hline
- 5.2 & Quotient Groups \\ \hline
- 5.3 & Isomorphism Theorems \\ \hline
- 6 & Rings and Ideals \\ \hline
- 6.1 & Rings \\ \hline
- 6.2 & Homomorphisms and Kernels \\ \hline
- 6.3 & Ideals \\ \hline \hline 
-  & \textbf{Second Exam (10\%)} \\ \hline \hline 
- 7 & Quotient Rings \\ \hline
- 7.1 & Cosets \\ \hline
- 7.2 & Constructing Quotient Rings \\ \hline
- 7.3 & Isomorphisms \\ \hline
- 8 & Divisibility \\ \hline
- 8.1 & Integral Domains and Fields \\ \hline
- 8.2 & The Division Algorithm \\ \hline
- 8.3 & Greatest Common Divisor \\ \hline
- 8.4 & The Euclidean Algorithm \\ \hline \hline 
-  & \textbf{Third Exam (15\%)} \\ \hline \hline 
- 9 & Prime Ideals and Maximal Ideals \\ \hline
- 9.1 & Roots of Polynomials \\ \hline
- 9.2 & Prime Ideals \\ \hline
- 9.3 & Maximal Ideals \\ \hline
- 9.4 & Field Extensions \\ \hline \hline 
-  & \textbf{Final Exam (20\%)} \\ \hline
-\end{tabular}
- -->
+Unless arrangements have been made ahead of time, either on an individual basis or a classwide basis, digital tools will not be allowed in the classroom from 5 minutes before the start of class until the end of class. 
+These tools include (but are not limited to): cell phones, laptops, tablets, smart watches (watches which do not "talk" with phones are okay). For example, if class runs from 10:15-11:20am, cell phones may not be used between 10:10-11:20am while inside the classroom. This policy includes myself, and is intended to give us a focused break from the digital realm. 
