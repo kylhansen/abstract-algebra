@@ -19,8 +19,8 @@ library(kableExtra)
 [^2]: Large parts of this syllabus are borrowed from previous syllabi by David Hunter. 
 
 ```{r echo=FALSE}
-kbl(data.frame(x = c("Time", "Location", "Professor", "Email", "Office", "Office Hours"),
-                 y = c("MWF, 8:00am-9:05am", "Winter Hall 110", "Kyle Hansen, Ph.D.", "kylhansen@westmont.edu", "Winter Hall 303", "TBA")), col.names = NULL, booktabs = TRUE)
+kbl(data.frame(x = c("Time", "Location", "Professor", "Email", "Office", "Office Hours", "Course Website"),
+                 y = c("MWF, 8:00am-9:05am", "Winter Hall 110", "Kyle Hansen, Ph.D.", "kylhansen@westmont.edu", "Winter Hall 303", "TBA", "https://kylhansen.github.io/abstract-algebra/")), col.names = NULL, booktabs = TRUE)
 ```
 
 ## Course Description 
@@ -131,7 +131,7 @@ This course will have three (3) midterm exams and one (1) final exam. These exam
 
 ### Unit Schedule
 
-A separate document will be provided which outlines the specific dates and assignments due throughout the course. We will attempt to adhere to the following general schedule for this course, with exams punctuating the end of each unit:
+An in-depth [(tentative) schedule](../schedule.qmd) can be found online at the [course website](../index.qmd). We will attempt to adhere to the following general schedule for this course, with exams punctuating the end of each unit:
 
 #### Unit 1: Elementary Group Theory
 - Definitions (§1), Constructions (§2), and Homomorphisms (§3) of Groups. 

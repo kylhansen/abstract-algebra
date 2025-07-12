@@ -18,7 +18,9 @@ table <- kbl(schedule,
     col.names = c("Date","MWF","Week","Preview Due","Typeset", "Quiz","Exam","Other"), 
     booktabs = TRUE,
     align = rep("l", ncol(schedule)),
-    longtable = TRUE)
+    longtable = TRUE,
+    ) %>%
+    kable_styling(bootstrap_options = c("striped", "hover"),full_width = F)
 
 for (i in seq(3, nrow(schedule), by = 3)) {
   table <- table %>% row_spec(i, extra_css = "border-bottom: 2px solid black;")
