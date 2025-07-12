@@ -4,4 +4,4 @@ title: "Welcome!"
 
 This is [Dr. Hansen's](https://kylhansen.github.io/) course webpage for Abstract Algebra (MA-110) at Westmont College. This is only for reference. Assignments will be managed and updated at the official course Canvas page.
 
-The [syllabus](syllabus/syllabus.qmd) and [tentative schedule](schedule.qmd) provide a good orientation to the course. The [textbook](media/papers/hunter-algebra.pdf) (and indeed, the entire structure of this course) that we will be following is written largely by David Hunter. I am deeply indebted to him for this course content. Any mistakes introduced are my own doing.
+The [syllabus](syllabus/syllabus.qmd) and [tentative schedule](schedule.qmd) provide a good orientation to the course. The textbook (and indeed, the entire structure of this course) that we will be following is written largely by David Hunter, and can be found on the official Canvas site. I am deeply indebted to him for this course content. Any mistakes introduced are my own doing.
