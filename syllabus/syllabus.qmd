@@ -106,7 +106,7 @@ There will typically be three phases to the inquiry process, all focused on the 
 
 On most days, there will be a written assignment due the night before class. My expectation is that these prework assignments will be hand written; I encourage you to find an efficient notebook system that allows you to intersperse hand-outs and your own written work. A three-ring binder works well for this purpose.
 		  
-Use a scanner app (e.g., Genius Scan, Adobe Scan) to make a PDF of your prework and submit it on Gradescope. If your prework spans multiple pages, please combine all pages into a single PDF file. Be sure that each page is properly matched and in the correct orientation.
+Use a scanner app (e.g., Genius Scan, Adobe Scan) to make a PDF of your prework and submit it on Canvas. If your prework spans multiple pages, please combine all pages into a single PDF file. Be sure that each page is properly scanned and in the correct orientation.
 		  
 In general, you can receive full credit for less-than-perfect prework assignments, as long as you make significant progress on each problem.  Making progress can include writing down the first and last lines of the proof, and formulating some questions about what you didn't understand.
 		  
@@ -131,7 +131,7 @@ This course will have three (3) midterm exams and one (1) final exam. These exam
 
 ### Unit Schedule
 
-An in-depth [(tentative) schedule](../schedule.qmd) can be found online at the [course website](../index.qmd). We will attempt to adhere to the following general schedule for this course, with exams punctuating the end of each unit:
+An in-depth [tentative schedule](../schedule.qmd) can be found online at the [course website](../index.qmd). We will attempt to adhere to the following general schedule for this course, with exams punctuating the end of each unit:
 
 #### Unit 1: Elementary Group Theory
 - Definitions (§1), Constructions (§2), and Homomorphisms (§3) of Groups. 

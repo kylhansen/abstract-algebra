@@ -1,5 +1,5 @@
 ---
-title: "Schedule"
+title: "Tentative Schedule"
 output: 
   pdf_document:
     keep_tex: true
@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = FALSE)
 library(knitr)
 library(kableExtra)
 ```
+
+Official due dates will be managed through the official course Canvas page.
 
 ```{r echo=FALSE}
 schedule <- read.csv("schedule/schedule.csv")
