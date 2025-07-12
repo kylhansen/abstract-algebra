@@ -4,6 +4,7 @@ project:
 
 website:
   title: "MA-110"
+  favicon: media/images/sunflower.png
   navbar:
     right:
       - href: index.qmd
